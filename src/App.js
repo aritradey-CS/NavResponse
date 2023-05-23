@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 // import Gallary from "./Gallary";
 // import About from "./About";
 
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const Home = () => {
@@ -13,12 +12,11 @@ const Home = () => {
     <>
       <Navbar />
       <section className="hero-section">
-        <p>
-          I am an engineering student from my blog,
-          you can get informations for digital technologies which are may
-          included in your course or beyond!
-        </p>
         <h1>Aritra's Diary Home Page</h1>
+        <p>
+          I am an engineering student from my blog, you can get informations for
+          digital technologies which are may included in your course or beyond!
+        </p>
       </section>
     </>
   );
@@ -30,7 +28,9 @@ const Pages = () => {
       <Navbar />
       <section className="hero-section">
         <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem similique possimus, odit culpa, ipsum earum sunt velit aliquid qui magnam! Vel, cupiditate provident.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem
+          similique possimus, odit culpa, ipsum earum sunt velit aliquid qui
+          magnam! Vel, cupiditate provident.
         </p>
         <h1>Aritra's Diary About Page</h1>
       </section>
@@ -44,7 +44,8 @@ const Gallary = () => {
       <Navbar />
       <section className="hero-section">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo doloremque ullam illum ex saepe enim sequi tenetur possimus hic qui!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+          doloremque ullam illum ex saepe enim sequi tenetur possimus hic qui!
         </p>
         <h1>Aritra's Diary Gallary Page</h1>
       </section>
@@ -57,7 +58,8 @@ const About = () => {
       <Navbar />
       <section className="hero-section">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto vitae impedit?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto
+          vitae impedit?
         </p>
         <h1>Aritra's Diary About Page</h1>
       </section>
@@ -70,7 +72,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/page" element={<Pages />} />
+        <Route exact path="/pages" element={<Pages />} />
         <Route exact path="/gallary" element={<Gallary />} />
         <Route exact path="/about" element={<About />} />
       </Routes>

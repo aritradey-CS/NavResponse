@@ -18,9 +18,9 @@ const Navbar = () => {
 
         <div className="logo">
           <h2>
-            <span>A</span>ritra's
-            <br />
-            <span>D</span>iary
+            <span className="A">A</span>ritra's
+            {/* <br /> */}
+            <span className="D">D</span>iary
           </h2>
         </div>
 
